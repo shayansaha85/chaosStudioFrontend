@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tools</title>
+    
+    <style>
+        #container {
+            margin-left: 50px;
+        }
+
+        #heading {
+            margin-left: 50px;
+        }
+        #cpuStress, #cpuSpike, #memoryStress, #memorySpike, #diskStress, #diskSpike {
+            margin-left: 50px;
+
+        }
+        #loginButton {
+            width: 100px;
+            height: 20px;
+        }
+    </style>
+
+</head>
+<body>
+        <h1 id="heading" style="color:green; font-family: Helvetica">CPU Utilities</h1>
+        <hr>
+        <br>
+        <div id="container">
+        <form id="cpuStress" action="" method="post">
+            <h4 style="font-family: Helvetica; color: brown">CPU Stress</h4>
+            Cores : <input type="number" name="cpuStress_cores" id="" required><br><br>
+            Burn percentage : <input type="number" name="cpuStress_percentage" id="" required><br><br>
+            Duration : <input type="number" name="cpuStress_duration" id="" required><br><br>
+          <input id="loginButton" type="submit" name="" value="Execute Test" id="">
+        </form>
+
+        <br><br>
+
+        <form id="cpuSpike" action="" method="post">
+            <h4 style="font-family: Helvetica; color: brown;">CPU Random Spike Stress</h4>
+            Cores : <input type="number" name="cpuSpikeRandom_cores" id="" required><br><br>
+            Number of Spikes : <input type="number" name="cpuSpikeRandom_number" id="" required><br><br>
+            Spike percentage (min) : <input type="number" name="cpuSpikeRandom_percentage_min" id="" required><br><br>
+            Spike percentage (max) : <input type="number" name="cpuSpikeRandom_percentage_max" id="" required><br><br>  
+            Duration of each spike : <input type="number" name="cpuSpikeRandom_duration" id="" required><br><br>
+            Sleep time between spikes (in sec) : <input type="text" name="cpuSpikeRandom_timegap" id="">
+            <br><br><input id="loginButton" type="submit" name="" value="Execute Test" id="">
+        </form>
+        <br><br>
+
+        <form id="cpuSpike" action="" method="post">
+            <h4 style="font-family: Helvetica; color: brown;">CPU Fixed Spike Stress</h4>
+            Cores : <input type="number" name="cpuSpikeFixed_cores" id="" required><br><br>
+            Number of Spikes : <input type="number" name="cpuSpikeFixed_number" id="" required><br><br>
+            Spike percentage : <input type="number" name="cpuSpikeFixed_percentage" id="" required><br><br>
+            Duration of each spike : <input type="number" name="cpuSpikeFixed_duration" id="" required><br><br>
+            Sleep time between spikes (in sec) : <input type="text" name="cpuSpikeFixed_timegap" id=""><br><br>
+           <input id="loginButton" type="submit" name="" value="Execute Test" id="">
+        </form>
+
+    </div>
+
+</body>
+</html>

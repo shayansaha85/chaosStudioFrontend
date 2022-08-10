@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tools</title>
+    
+    <style>
+        #container {
+            margin-left: 50px;
+        }
+
+        #heading {
+            margin-left: 50px;
+        }
+       #diskStress, #diskSpike {
+            margin-left: 50px;
+
+        }
+        #loginButton {
+            width: 100px;
+            height: 20px;
+        }
+
+
+    </style>
+
+</head>
+<body>
+        <h1 id="heading" style="color:green; font-family: Helvetica">Disk Utilities</h1>
+        <hr>
+        <br>
+        <div id="container">
+        <form id="diskStress" action="" method="post">
+            <h4 style="font-family: Helvetica; color: brown">Disk Stress</h4>
+            Burn percentage : <input type="number" name="diskStress_percentage" id="" required><br><br>
+            Duration (in sec) : <input type="number" name="diskStress_duration" id="" required><br><br>
+          <input id="loginButton" type="submit" name="" value="Execute Test" id="">
+        </form>
+
+        <br><br>
+
+        <form id="diskSpike" action="" method="post">
+            <h4 style="font-family: Helvetica; color: brown;">Disk Random Spike Stress</h4>
+            Number of Spikes : <input type="number" name="diskSpikeRandom_number" id="" required><br><br>
+            Spike percentage (min) : <input type="number" name="diskSpikeRandom_percentage_min" id="" required><br><br>
+            Spike percentage (max) : <input type="number" name="diskSpikeRandom_percentage_max" id="" required><br><br>  
+            Duration of each spike (in sec) : <input type="number" name="diskSpikeRandom_duration" id="" required><br><br>
+            Sleep time between spikes (in sec) : <input type="text" name="diskSpikeRandom_timegap" id=""><br><br>
+           <input id="loginButton" type="submit" name="" value="Execute Test" id="">
+        </form>
+        <br><br>
+
+        <form id="diskSpike" action="" method="post">
+            <h4 style="font-family: Helvetica; color: brown;">Disk Fixed Spike Stress</h4>
+            Number of Spikes : <input type="number" name="diskSpikeFixed_number" id="" required><br><br>
+            Spike percentage : <input type="number" name="diskSpikeFixed_percentage" id="" required><br><br>
+            Duration of each spike (in sec) : <input type="number" name="diskSpikeFixed_duration" id="" required><br><br>
+            Sleep time between spikes (in sec) : <input type="text" name="diskSpikeFixed_timegap" id=""><br><br>
+           <input id="loginButton" type="submit" name="" value="Execute Test" id="">
+        </form>
+
+    </div>
+
+</body>
+</html>

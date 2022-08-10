@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tools</title>
+    
+    <style>
+        #container {
+            margin-left: 50px;
+        }
+
+        #heading {
+            margin-left: 50px;
+        }
+        #memoryStress, #memorySpike {
+            margin-left: 50px;
+
+        }
+        #loginButton {
+            width: 100px;
+            height: 20px;
+        }
+    </style>
+
+</head>
+<body>
+        <h1 id="heading" style="color:green; font-family: Helvetica">Memory Utilities</h1>
+        <hr>
+        <br>
+        <div id="container">
+        <form id="memoryStress" action="" method="post">
+            <h4 style="font-family: Helvetica; color: brown">Memory Stress</h4>
+            Burn size (in Megabytes) : <input type="number" name="memoryStress_sizee" id="" required><br><br>
+            Duration (in sec) : <input type="number" name="memoryStress_duration" id="" required><br><br>
+          <input id="loginButton" type="submit" name="" value="Execute Test" id="">
+        </form>
+
+        <br><br>
+
+        <form id="memorySpike" action="" method="post">
+            <h4 style="font-family: Helvetica; color: brown;">Memory Random Spike Stress</h4>
+            Number of Spikes : <input type="number" name="memorySpikeRandom_number" id="" required><br><br>
+            Minimum Spike Size (in Megabytes) : <input type="number" name="memorySpikeRandom_size_min" id="" required><br><br>
+            Maximum Spike Size (in Megabytes) : <input type="number" name="memorySpikeRandom_size_max" id="" required><br><br>  
+            Duration of each spike (in sec) : <input type="number" name="memorySpikeRandom_duration" id="" required><br><br>
+            Sleep time between spikes (in sec) : <input type="text" name="memorySpikeRandom_timegap" id=""><br><br>
+
+           <input id="loginButton" type="submit" name="" value="Execute Test" id="">
+        </form>
+        <br><br>
+
+        <form id="memorySpike" action="" method="post">
+            <h4 style="font-family: Helvetica; color: brown;">Memory Fixed Spike Stress</h4>
+            Number of Spikes : <input type="number" name="memorySpikeFixed_number" id="" required><br><br>
+            Spike size (in Megabytes) : <input type="number" name="memorySpikeFixed_size" id="" required><br><br>
+            Duration of each spike (in sec) : <input type="number" name="memorySpikeFixed_duration" id="" required><br><br>
+           Sleep time between spikes (in sec) : <input type="text" name="memorySpikeFixed_timegap" id=""><br><br>
+           <input id="loginButton" type="submit" name="" value="Execute Test" id="">
+
+        </form>
+
+    </div>
+
+</body>
+</html>

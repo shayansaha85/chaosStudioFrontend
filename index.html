@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        #container {
+            margin-left: 100px;
+        }
+
+        #heading {
+            margin-left: 100px;
+        }
+
+        #loginForm {
+            margin-left: 100px;
+
+        
+        }
+        #loginButton {
+            width: 100px;
+            height: 20px;
+        }
+        
+    </style>
+    
+</head>
+<body>
+    <br><br>
+        <h1 id="heading" style="color:green; font-family: Arial, Helvetica, sans-serif;">Chaos Studio</h1>
+        <hr>
+        <br>
+    <div id="container">
+        <!-- {% if p == "k" %}
+            <img src="/static/loading.gif" alt="" width="30">
+            
+        {% endif %} -->
+        <form id="loginForm" action="tools_page.html" method="post">
+            Username : <input type="text" name="username" id="" required><br><br>
+            Server IP : <input type="text" name="ip" id="" required><br><br>
+            Password : <input type="password" name="password" id="" required><br><br>
+            <input id="loginButton" type="submit" name="" value="Login" id="">
+            <!-- {% if msg == "false" %}
+            <h4 style="font-family: Arial, Helvetica, sans-serif; color:red">Login failed</h4>   
+            {% endif %} -->
+        </form>
+    </div>
+</body>
+</html>
